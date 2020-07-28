@@ -6,6 +6,7 @@
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
   <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
 </header>
+<head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173952270-1"></script>
 <script>
@@ -15,3 +16,4 @@
 
   gtag('config', 'UA-173952270-1');
 </script>
+</head>
