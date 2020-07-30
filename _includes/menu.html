@@ -1,4 +1,5 @@
 {% if include.menu %}
+<img src="../logo.png" id="header_image">
   <nav>
   {% for item in include.menu %}
     {%- assign node = site.pages | where: "name", item.file | first -%}
