@@ -77,7 +77,7 @@ The share 'profiles$' allows anonymous read access, so let’s mount it and take
 mount -t cifs //10.10.10.192/profiles$ /mnt/blackfield/
 ```
 Note the mode 'cifs' is for mounting Windows shares on Linux.
-Listing all the files in the share displays multiple folders with what looks like usernames. It's probably set up so each user probably has their own folder.
+Listing all the files in the share displays multiple folders with what looks like usernames. It's probably set up so each user has their own folder.
 ```
 root@crab:~# cd /mnt/blackfield
 root@crab:/mnt/blackfield# ls                                                                                                       [6/6]
