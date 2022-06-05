@@ -98,6 +98,10 @@ router@shell# for i in $(seq 1 1000); do if nc 192.168.1.108 $i </dev/null 2>&1 
 
 <img src="/assets/images/casual/router/port-scan.png" alt="Logo"> <br>
 
+It's pretty fast too:
+
+<img src="/assets/images/casual/router/port-scan.gif" alt="Logo"> <br>
+
 To provide more accurate and responsive results, I copied an alternative busybox binary found <a href="https://github.com/darkerego/mips-binaries" target="_blank">here</a> to the router. busybox-mips contains the complete version of Netcat with the options you'd expect to see. You could compile Nmap yourself and use that instead, more on that later.<br>
 
 On Kali
