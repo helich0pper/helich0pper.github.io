@@ -14,7 +14,8 @@ layout: post
 
 # Evil or Reckless ISP?
 
-I recently had a router setup by my ISP for casual internet usage, nothing out of the ordinary. While casually going over the router configurations, I spotted a command injection attempt in one of the input fields. Either this router ships with this configuration, or it was my ISP.
+I recently had a router setup by my ISP for casual internet usage, nothing out of the ordinary. While casually going over the router configurations, I spotted a command injection attempt in one of the input fields. Either this router ships with this configuration, or it was my ISP. <br>
+It is possible that a bot is picking off new routers as they join the network with default credentials (admin  ::  admin).
 
 <img src="/assets/images/casual/router/command-injection.png" alt="Logo"> <br>
 
@@ -224,7 +225,7 @@ Run a port scan on your router to find unusual ports listening/open. 80 and 443 
 
 # Conclusion
 Configure your routers with SSH and use proper authentication measures. Having an insecure Telnet backdoor on a random high port can be quickly discovered by scanning the full port range (0-65535) with Nmap. <br> 
-I hope opening random bind shells is not a common practice amongst Internet Service Providers lol, check your routers.
+I hope opening random bind shells is not a common practice amongst Internet Service Providers lol, check your routers. Do not discard the idea that this may be a malicous bot. In any case, try your best to avoid cheap and outdated routers.
 
 <hr>
 
