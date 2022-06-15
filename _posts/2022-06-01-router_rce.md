@@ -77,7 +77,7 @@ To verify "192.168.1.108" is the Metasploitable machine, Netcat can be used to p
 <img src="/assets/images/casual/router/netcat-usage.png" alt="Logo"> <br>
 
 # Port Scanning With Netcat
-## Without using the -sv option
+## Without using the -zv option
 
 Since there is no options in this Netcat version, a little /dev/null magic is needed. A quick bash script can be used to scan our target for open TCP ports from range 1-1000. Skip ahead if you prefer the complete Netcat binary.
 
@@ -126,7 +126,7 @@ After: <br>
 
 With this version, the "-zv" options can be used to detect if a port is open or not. 
 
-## Using the -sv option
+## Using the -zv option
 
 ```
 router@shell# ./busybox-mips nc 192.168.1.108 22 -zv
